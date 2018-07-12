@@ -1,0 +1,551 @@
+@charset "utf-8";
+/* 版式自定义 */
+
+
+.where {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px #d2d2d2 solid;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+.main {
+	/*width: 840px;*/
+	min-height: 890px;
+	border-left: 1px #ccc solid;
+	padding: 0 25px 0 24px;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.side {
+	width: 280px;
+}
+.tit {
+	height: 16px;
+	border-bottom: 1px #d2d2d2 solid;
+	padding: 10px 0;
+	line-height: 16px;
+	position: relative;
+}
+.tit b {
+	display: inline-block;
+	margin: -10px 0;
+	padding: 0 15px;
+	border-bottom: 2px #c0392b solid;
+	line-height: 35px;
+	font-size: 17px;
+}
+/* 侧栏菜单 */
+.menu h2 {
+	background-color: #c0392b;
+	font: bold 22px/80px microsoft yahei;
+	color: #fff;
+	text-align: center;
+}
+.menu li {
+	vertical-align: middle;
+	border-left: 5px #c0392b solid;
+}
+.menu li a {
+	display: block;
+	height: 59px;
+	line-height: 59px;
+	border-bottom: 1px #ccc solid;
+	padding-left: 35%;
+	font-size: 18px;
+	font-weight: bold;
+}
+.menu li.current, .menu li:hover {
+	border-left: 5px #fdde0a solid;
+}
+.menu li.current a, .menu li a:hover {
+	color: #c0392b;
+}
+/* 热点排行 */
+.hots {
+	margin-bottom: 10px;
+}
+.hots ul {
+	padding: 0 10px;
+}
+.hots li {
+	height: 16px;
+	padding: 10px 0;
+	line-height: 16px;
+}
+.hots li em {
+	display: inline-block;
+	width: 26px;
+	text-align: center;
+	font: bold italic 14px/16px Arial, Helvetica, sans-serif;
+	margin: 0 10px 0 0;
+	background-color: #b9b9b9;
+	color: #fff;
+}
+p.reco {
+	border: 1px #d0d0d0 solid;
+	margin-top: 10px;
+	height: 216px;
+}
+p.reco a {
+	display: block;
+	border: 3px #fff solid;
+	height: 216px;
+	position: relative;
+	overflow: hidden;
+}
+p.reco a img {
+	width: 278px;
+	height: 210px;
+}
+.hots .top3 {
+	background-color: #c0392b;
+	color: #fff;
+}
+/* 分页 */
+.pages {
+	font: 0/0 lx;
+	padding: 15px 0;
+}
+.pages a {
+	display: inline-block;
+	line-height: 28px;
+	margin: 0 1px;
+	padding: 0 10px;
+	border: 1px #d2d2d2 solid;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.pages a:hover {
+	border: 1px #c0392b solid;
+}
+.pages a.current {
+	border: 1px #c0392b solid;
+	background-color: #c0392b;
+	color: #fff;
+	position: relative;
+}
+.pages span {
+	line-height: 28px;
+	font-size: 14px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.pages select {
+	border: 1px #d2d2d2 solid;
+	padding: 4px;
+}
+/* 列表自定义 */
+.main li:hover {
+	background-color: #f8f8f8;
+}
+/* 文字列表 */
+.main .list-t {
+	padding: 10px;
+}
+.main .list-t li {
+	height: 50px;
+	border-bottom: 1px #ccc dotted;
+	background: url(../images/index/dot2.png) 10px 50% no-repeat;
+	padding: 0 0 0 25px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.main .list-t li.line {
+	height: 0;
+	border-bottom: 1px #ccc dashed;
+	font: 0/0 lx;
+	overflow: hidden;
+	margin: 10px 0;
+}
+.new .list-t li {
+	line-height: 34px;
+	background: url(../images/index/dot.png) 15px 50% no-repeat;
+	padding-left: 30px;
+}
+/* 标题加文字列表 */
+.main .list-b-t li {
+	padding: 15px;
+	border-bottom: 1px #d2d2d2 dotted;
+	color: #666;
+}
+.main .list-b-t li.current {
+	background-color: #f6f6f6;
+}
+.main .list-b-t li h4 {
+	line-height: 30px;
+	font-size: 16px;
+}
+.main .list-b-t li p {
+	line-height: 30px;
+}
+/* 标题加文字列表分享 */
+.main .list-b-t {
+	overflow: visible;
+}
+.main .list-b-t li {
+ *position:static;
+	height: 60px;
+}
+.main .list-b-t .share {
+	float: right;
+	width: 50px;
+	margin-top: -30px;
+}
+.main .list-b-t .share .btn {
+	display: inline-block;
+	padding-left: 20px;
+	background: url(/images/col/share.png) 0 50% no-repeat;
+	line-height: 30px;
+	font-weight: bold;
+}
+.main .list-b-t .share .share-box {
+	position: absolute;
+	top: 70px;
+	right: 10px;
+	border: 1px #d2d2d2 solid;
+	width: 80px;
+	line-height: 14px;
+ *margin-left:-40px;
+	padding: 5px!important;
+	background-color: #fff;
+	display: none;
+	z-index: 999;
+ *position:relative;
+ *top:0;
+ *right:0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.main .list-b-t .share .share-box a {
+	position: relative;
+	display: block;
+	width: 55px;
+	padding-left: 25px;
+	z-index: 999;
+}
+.main .list-b-t .share .share-box a:hover {
+	background-color: #ddd;
+}
+/* 图文列表 */
+.main .list-p-t {
+	overflow: visible;
+}
+.main .list-p-t li {
+	border-bottom: 1px #d2d2d2 solid;
+	padding: 15px;
+	line-height: 30px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.main .list-p-t li a.pic {
+	float: left;
+	display: block;
+	margin-right: 15px;
+}
+.main .list-p-t li a.pic img {
+	height: 110px;
+	background-color: #fff;
+	border: 1px #ddd solid;
+	padding: 4px;
+}
+.main .list-p-t li a.pic:hover img {
+	border-color: #bbb;
+}
+.main .list-p-t li h4 {
+	font-size: 16px;
+}
+.main .list-p-t li p.text {
+	text-indent: 2em;
+}
+.main .list-p-t li p strong, .main .list-p-t li a {
+	color: #048;
+}
+.main .list-p-t li .share {
+	float: right;
+	width: 110px;
+	margin: -28px -10px 0 0;
+	line-height: 30px;
+}
+.main .list-p-t li .share .share-box {
+	width: 50px;
+}
+.main .list-p-t li .share .btn {
+	float: left;
+	display: inline-block;
+	padding-left: 20px;
+	background: url(../images/col/share.png) 0 50% no-repeat;
+	line-height: 28px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+/* 图片列表 */
+.list-p {
+	margin-right: -10px;
+	padding: 10px 0;
+}
+.list-p li {
+	width: 148px;
+	margin-right: 10px;
+}
+.list-p li a {
+	width: 120px;
+}
+.list-p li a img {
+	float: left;
+	width: 100%;
+}
+.list-p li a span {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	line-height: 24px;
+}
+.list-p li a strong {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+/* 正文自定义 */
+.article h2 {
+	color: #c0392b;
+	font: normal 24px/30px microsoft yahei;
+	margin: 0 45px -10px;
+	padding: 20px 0 10px;
+	text-align: center;
+}
+.article h3 {
+	color: #c0392b;
+	font: normal 20px/50px microsoft yahei;
+}
+.article .info {
+	line-height: 40px;
+	border-bottom: 1px #ccc dashed;
+	margin: 0 20px;
+	text-align: center;
+	position: relative;
+}
+.article .info span {
+	margin-right: 20px;
+}
+.article .info em {
+/*font-family:"Georgia";*/
+	/*font-size:16px;*/
+	/*font-weight:bold;*/
+	/*color:green;*/
+}
+.article .article-box {
+	margin: 0 20px;
+	padding: 30px 20px;
+	border-bottom: 1px #d1d1d1 dashed;
+}
+.article .article-box p {
+	line-height: 2em;
+	font-size: 16px;
+	margin-bottom: 1em;
+}
+.article table {
+	margin: 0 auto 1em;
+}
+.article-box p a {
+	text-decoration: underline;
+	margin: 0 5px;
+	color: #09c;
+}
+.article-box img {
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
+}
+.article-box table {
+	width: 90%;
+	margin: 0 auto;
+}
+.article-box table th, .article-box table td {
+	border: 1px #ccc solid;
+	padding: 5px;
+	line-height: 20px;
+}
+.article-box table th {
+	background-color: #f8f8f8;
+	text-align: center;
+	font-weight: bold;
+}
+.article .bdsharebuttonbox {
+	margin: 10px 20px 0;
+}
+.article .opt {
+	text-align: right;
+	line-height: 36px;
+	color: #323232;
+	margin: 0px 20px 0;
+	padding: 0 20px;
+}
+.article .opt a {
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #323232;
+}
+.article .opt a:hover {
+	color: #09c;
+}
+.article .related {
+	margin: 10px 20px;
+}
+.article .related h4 {
+	height: 36px;
+	border-bottom: 1px #d1d1d1 solid;
+	margin-bottom: 10px;
+}
+.article .related h4 span {
+	display: inline-block;
+	border-bottom: 1px #c0392b solid;
+	font: normal 18px/36px microsoft yahei;
+	color: #135a9c;
+	margin-bottom: -1px;
+	padding: 0 10px;
+	position: relative;
+}
+.article .related li {
+	float: left;
+	width: 42%;
+	margin: 0 2%;
+	height: 30px;
+	line-height: 30px;
+}
+.article .related li a {
+	display: inline-block;
+	height: 30px;
+	overflow: hidden;
+	border-bottom: 1px #ccc dotted;
+	background: url(../images/index/dot2.png) 10px 50% no-repeat;
+	padding: 0 0 0 25px;
+	line-height: 30px;
+	font-size: 16px;
+}
+/* 正文组图 */
+.photos {
+	width: 620px;
+	margin: 0 auto;
+	position: relative;
+}
+.photos .pic {
+	text-align: center;
+	position: relative;
+}
+.photos .pic img {
+	min-height: 360px;
+	width: 620px;
+}
+.photos .pic span {
+	display: block;
+}
+.photos .pic .tips {
+	display: none;
+	width: 200px;
+	font-size: 14px;
+	line-height: 40px;
+	background: rgba(0,0,0,0.5);
+ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000, endcolorstr=#7F000000);
+	color: #fff;
+	padding: 0 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px 0 0 -110px;
+}
+.photos h4 {
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.photos .preview { /* 容器大小、溢出隐藏 */
+	width: 620px;
+	height: 80px;
+	position: relative;
+	overflow: hidden;
+	border-top: 1px #e0e0e0 solid;
+	border-bottom: 1px #e0e0e0 solid;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 1px 0;
+}
+.photos .preview ul {
+	height: 80px;
+	background-color: #f2f2f2;
+}
+.photos .preview li { /* 子元素大小 */
+	width: 124px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 14px;
+	text-align: center;
+	padding: 5px 0;
+}
+.photos .preview li a {
+	width: 112px;
+	height: 66px;
+	display: block;
+	border: 2px #f2f2f2 solid;
+	margin: 0 auto;
+}
+.photos .preview li.current a {
+	border: 2px #c0392b solid;
+}
+.photos .preview li a span {
+	width: 110px;
+	height: 64px;
+	display: block;
+	border: 1px #fff solid;
+	background-color: #fff;
+	overflow: hidden;
+	cursor: pointer;
+}
+.photos .preview li a img {
+	width: 110px;
+}
+.photos p .prev, .photos p .next {
+	display: block;
+	width: 23px;
+	height: 23px;
+	border: none;
+	background-image: url(/images/col/arr.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 30px;
+	cursor: pointer;
+	z-index: 3;
+	font: 0/0 lx;
+	overflow: hidden;
+	margin: 0;
+}
+.photos p .prev {
+	left: 0;
+}
+.photos p .next {
+	background-position: 100% 0;
+	right: 0;
+}
+.photos .pic .prev, .photos .pic .next {
+	width: 50%;
+	_height: 2000px;
+	background-image: url(about:blank);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.photos .pic .prev {
+	cursor: url(http://i3.sinaimg.cn/dy/deco/2012/1218/hdfigure/hd_left_arrow.cur), auto;
+	left: 0;
+}
+.photos .pic .next {
+	cursor: url(http://i3.sinaimg.cn/dy/deco/2012/1218/hdfigure/hd_right_arrow.cur), auto;
+	right: 0;
+}
